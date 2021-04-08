@@ -42,7 +42,7 @@ class App extends Component () {
 export default App
 ```
 
-## Component Stateful
+## Component Stateful - Da forma antiga
 
 components com estado
 
@@ -86,3 +86,51 @@ export default App;
 ![](/assets/img/components-com-estado-stateful.png)
 
 ![](/assets/img/steteful-com-props.png)
+
+## Alterando estado na forma antiga
+
+```javascript
+import React,{ Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.handleClick = this.handleClick.bind(this)
+    
+    this.state = {
+      name: 'Carlos Henrique'
+    }
+  }
+
+  handleClick() {
+    this.setState({ name: 'Mikael' })
+  }
+
+  render() {
+
+    const { name } = this.state
+
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p onClick={this.handleClick}>
+            Meu nome é {name}
+          </p>
+        </header>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+```
+
+Estou mudando o nome de Henrique Teixeira para Mikael quando clicar no `<p>`
+
+![](assets/img/mudando-estado-do-botão-do-jeito-antigo-em-react.png)
