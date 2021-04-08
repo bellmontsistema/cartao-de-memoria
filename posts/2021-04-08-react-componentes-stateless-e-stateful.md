@@ -133,4 +133,4 @@ export default App;
 
 Estou mudando o nome de Henrique Teixeira para Mikael quando clicar no `<p>`
 
-![](assets/img/mudando-estado-do-botão-do-jeito-antigo-em-react.png)
+![](/assets/img/mudando-estado-do-botão-do-jeito-antigo-em-react.png)
