@@ -41,3 +41,46 @@ class App extends Component () {
 
 export default App
 ```
+
+## Component Stateful
+
+components com estado
+
+exemplo com classe
+
+```javascript
+import React,{ Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      name: 'Carlos Henrique'
+    }
+  }
+
+  render() {
+
+    const { name } = this.state
+
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Meu nome é {name}
+          </p>
+        </header>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+![](/assets/img/components-com-estado-stateful.png)
