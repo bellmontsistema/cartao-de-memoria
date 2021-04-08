@@ -12,4 +12,4 @@ background: "#fbde34"
 
 <https://babeljs.io/repl/>
 
-![](assets/img/babel-repl.png)
+![](/assets/img/babel-repl.png)
