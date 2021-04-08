@@ -84,3 +84,5 @@ export default App;
 ```
 
 ![](/assets/img/components-com-estado-stateful.png)
+
+![](/assets/img/steteful-com-props.png)
