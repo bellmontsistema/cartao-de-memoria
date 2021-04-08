@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: bellmontsistema/henriqueteixeira
+  repo: bellmontsistema/henrique-teixeira
   branch: main
   site_domain: henriqueteixeira.bellmontsistema.com.br
 
