@@ -11,32 +11,36 @@ Recebe como argumentos, um callback e um array. `useCallback` retornará uma v
 `useCallback(fn, inputs)` é equivalente a `useMemo(() => fn, inputs)`
 
 ```javascript
-import React, { useCallback, useState } from "react";
-import "./App.css";
+import P from 'prop-types';
+import './App.css';
+import React, { useState, useEffect, useCallback } from 'react';
 
-const Button = React.memo(({ incrementButton }) => {
-  // console.log('Filho Renderizou')
-  return <button onClick={() => incrementButton(10)}>+</button>;
+const Button = React.memo(function Button({ incrementButton }) {
+  console.log('Filho, renderizou');
+  return <button onClick={() => incrementButton(100)}>+</button>;
 });
 
-function UseCallBack() {
+Button.propTypes = {
+  incrementButton: P.func,
+};
+
+function App() {
   const [counter, setCounter] = useState(0);
 
   const incrementCounter = useCallback((num) => {
     setCounter((c) => c + num);
   }, []);
 
-  // console.log('pai renderizou')
+  console.log('Pai, renderizou');
 
   return (
-    <div className="App" style={{background: 'blue'}}>
-      <h1>useCallBack</h1>
+    <div className="App">
+      <p>Teste 3</p>
       <h1>C1: {counter}</h1>
       <Button incrementButton={incrementCounter} />
     </div>
   );
 }
 
-export default UseCallBack;
-
+export default App;
 ```
