@@ -6,18 +6,14 @@ thumbnail: assets/img/designer.svg
 category: Misc
 background: "#43A817"
 ---
-\# Live Server
-
-**Inicie um servidor de desenvolvimento local com recurso de recarga ao vivo para páginas estáticas e dinâmicas.**
-
-![](/assets/img/live-server.png)
+## Live Server
 
 <https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
 
-\# Color Highlight
-
-Esta extensão estiliza as cores css / web encontradas no seu documento.
-
-![](/assets/img/1_dupb365uixdqznewxca-lg.png)
+## Color Highlight
 
 <https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight>
+
+## Reload
+
+<https://marketplace.visualstudio.com/items?itemName=natqe.reload>
