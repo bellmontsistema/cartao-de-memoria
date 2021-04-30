@@ -49,7 +49,6 @@ Adicionar os scripts de desenvolvimento e build ao package.json
   "start": "webpack serve --mode development --open --hot",
   "build": "webpack --mode production"
 },
-
 ```
 
 ## React
@@ -63,7 +62,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(App(), document.getElementById('root'));
-
 ```
 
 app.js
@@ -74,8 +72,8 @@ import React from 'react';
 const App = () => {
   return React.createElement(
     'a',
-    { href: 'https://www.origamid.com' },
-    'Origamid',
+    { href: 'https://bellmontsistema.com.br' },
+    'Bellmont Sistema',
   );
 };
 
@@ -83,12 +81,6 @@ export default App;
 ```
 
 Inicie o desenvolvimento com:
-
-<!--StartFragment-->
-
-```bash
-
-```
 
 `npm start`
 
@@ -122,7 +114,6 @@ module.exports = {
     ],
   },
 };
-
 ```
 
 App.js
@@ -131,11 +122,10 @@ App.js
 import React from 'react';
 
 const App = () => {
-  return <a href="https://bellmontsistema.com.br">Origamid</a>;
+  return <a href="https://bellmontsistema.com.br">Bellmont Sistema</a>;
 };
 
 export default App;
-
 ```
 
 index.js
@@ -164,8 +154,6 @@ Instalar @babel/core, @babel/preset-react e babel-loader
 
 Criar o webpack.config.js para configurarmos o babel no webpack
 
-
-
 ```javascript
 module.exports = {
   // Nos módulos
@@ -190,7 +178,6 @@ module.exports = {
     ],
   },
 };
-
 ```
 
 App.js
@@ -199,11 +186,10 @@ App.js
 import React from 'react';
 
 const App = () => {
-  return <a href="https://www.origamid.com">Origamid</a>;
+  return <a href="https://bellmontsistema.com.br">Origamid</a>;
 };
 
 export default App;
-
 ```
 
 index.js
@@ -214,7 +200,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
 ```
 
 Inicie o desenvolvimento com:
