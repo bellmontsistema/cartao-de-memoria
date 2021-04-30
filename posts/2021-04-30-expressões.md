@@ -18,3 +18,14 @@ const total = numeros.filter((numero) => numero > 4);
 const active = true;
 const button = active && 'Botão está ativo';
 ```
+
+
+
+JSX
+
+```javascript
+// JSX
+<button onClick={(event) => event.target.classList.add('active')}>
+  Button
+</button>
+```
