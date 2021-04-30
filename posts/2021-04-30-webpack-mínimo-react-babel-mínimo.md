@@ -209,3 +209,61 @@ Inicie o desenvolvimento com:
 Crie a build final com:
 
 `npm run build`
+
+## Loaders (CSS)
+
+O webpack é instalado com o mínimo de pacotes possíveis para funcionar com o JavaScript. Para dicionarmos outras funcionalidades, como a importação de CSS, imagens, SVG e etc, precisamos adicionar loaders específicos para cada situação.
+
+`npm install style-loader css-loader --save-dev`
+
+webpack.config.js
+
+```javascript
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react'],
+          },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+};
+
+```
+
+App.css
+
+```css
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: Arial;
+  color: tomato;
+}
+
+```
+
+App.js
+
+```javascript
+import React from 'react';
+import './App.css';
+
+const App = () => {
+  return <a href="https://www.origamid.com">Origamid</a>;
+};
+
+export default App;
+
+```
