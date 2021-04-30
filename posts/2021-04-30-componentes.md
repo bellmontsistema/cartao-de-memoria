@@ -1,5 +1,5 @@
 ---
-title: Componentes
+title: Componentes  e Composição
 description: Permitem você dividir a sua interface em pequenos elementos. São
   criados através de funções que retornam elementos React ou classes que
   estendem React.Component e possuem o método render retornando um elemento
@@ -9,6 +9,8 @@ thumbnail: https://easybase.io/assets/images/posts_images/5-great-react-librarie
 category: ReactJS
 background: "#50bbd7"
 ---
+## Componentes
+
 ```javascript
 // Function Component
 const Button = () => {
@@ -21,4 +23,34 @@ class Button extends React.Component {
     return <button>Comprar</button>;
   }
 }
+```
+
+
+
+## Composição
+
+O principal motivo de criarmos componentes é para podermos compor a interface com diversos componentes que podem ser reutilizados.
+
+```javascript
+const Button = () => {
+  return <button>Comprar</button>;
+};
+
+const MainNav = () => {
+  return (
+    <nav>
+      <a href="#">Link 1</a>
+      <Button />
+    </nav>
+  );
+};
+
+const App = () => {
+  return (
+    <div>
+      <MainNav />
+      <Button />
+    </div>
+  );
+};
 ```
