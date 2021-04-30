@@ -15,5 +15,5 @@ async function fetchProdutos(url) {
   return json;
 }
 
-fetchProdutos('https://backend-bellmont.herokuapp.com/pages');
+const produto = fetchProdutos('https://backend-bellmont.herokuapp.com/pages');
 ```
