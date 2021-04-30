@@ -1,8 +1,8 @@
 ---
 title: React Element
-description: odo elemento React é criado com a função createElement. O Babel é o
-  responsável por transformar o elemento criado com JSX (que se parece com HTML)
-  em funções de React.
+description: Todo elemento React é criado com a função createElement. O Babel é
+  o responsável por transformar o elemento criado com JSX (que se parece com
+  HTML) em funções de React.
 date: 2021-04-30 07:35:07
 thumbnail: https://miro.medium.com/max/3840/1*vHHBwcUFUaHWXntSnqKdCA.png
 category: ReactJS
