@@ -9,9 +9,15 @@ background: "#50bbd7"
 ---
 ```javascript
 const App = () => {
-  const empresas = [<li key="e1">Apple</li>, <li key="e2">Google</li>];
+  const filmes = ['Before Sunrise', 'Before Sunset', 'Before Midnight'];
 
-  return <ul>{empresas}</ul>;
+  return (
+    <ul>
+      {filmes.map((filme) => (
+        <li key={filme}>{filme}</li>
+      ))}
+    </ul>
+  );
 };
 
 ```
