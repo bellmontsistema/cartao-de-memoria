@@ -20,12 +20,14 @@ Quer saber mais sobre os desafios de otimização de imagem? Leia o Guia concei
 <https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/>
 
 ```jsx
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
+import { StaticImage } from "gatsby-plugin-image"    
+
+<StaticImage
+ src="../images/gatsby-astronaut.png"
+ width={300}
+ quality={95}
+ formats={["AUTO", "WEBP", "AVIF"]}
+ alt="A Gatsby astronaut"
+ style={{ marginBottom: `1.45rem` }}
+/>
 ```
