@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: bellmontsistema/henrique-teixeira
+  repo: bellmontsistema/cartao-de-memoria
   branch: main
-  site_domain: henriqueteixeira.bellmontsistema.com.br
+  site_domain: cartaodememoria.bellmontsistema.com.br
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
