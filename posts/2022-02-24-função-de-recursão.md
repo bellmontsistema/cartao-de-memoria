@@ -4,8 +4,8 @@ description: Recursão é quando uma função chama ela mesma até chegar em um 
   base simples que desencadeia a resolução do problema.
 date: 2022-02-24 11:06:48
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png
-category: Typescript
-background: "#0076c6"
+category: Javascript
+background: "#FEC748"
 ---
 ## Resolução
 
