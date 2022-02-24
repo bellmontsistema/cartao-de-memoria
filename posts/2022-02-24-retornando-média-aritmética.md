@@ -4,8 +4,8 @@ description: Escrevendo uma função que recebe um número qualquer de números
   inteiros como argumento e retorna a média aritmética entre eles
 date: 2022-02-24 04:31:42
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png
-category: Typescript
-background: "#0076c6"
+category: Javascript
+background: "#FEC748"
 ---
 ## Método com forEach
 
