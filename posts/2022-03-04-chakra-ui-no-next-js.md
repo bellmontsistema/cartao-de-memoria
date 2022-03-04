@@ -20,6 +20,42 @@ Pasta => styles
 
 Arquivos => `config.ts` e `theme.ts`
 
-`Criando um Tema Padrão`
+## Criando um Tema Padrão
 
 No arquivo theme.ts efetuaremos a seguinte configuração.
+
+```tsx
+import { extendTheme } from "@chakra-ui/react";
+
+export const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        bg: "gray.900",
+        color: "gray.50",
+      },
+    },
+  },
+});
+```
+
+## Exportando Theme
+
+No arquivo `_app.tsx`
+
+```tsx
+import { AppProps } from "next/app"; 
+import { ChakraProvider } from "@chakra-ui/react"; //Importação do Provider
+import { theme } from "../styles/theme"; // Importação do tema criado
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <ChakraProvider theme={theme}> //Envolvemos em volta da aplicação
+      <Component {...pageProps} />
+    </ChakraProvider> // Envolvemos em volta da aplicação
+  );
+}
+
+export default MyApp;
+
+```
