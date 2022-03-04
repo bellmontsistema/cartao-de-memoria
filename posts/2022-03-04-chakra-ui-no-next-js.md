@@ -11,5 +11,5 @@ background: "#000000"
 Primeiro Instalamos as dependências do chakra UI
 
 ```jsx
-yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled
+yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion
 ```
