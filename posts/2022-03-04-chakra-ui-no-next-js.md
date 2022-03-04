@@ -50,7 +50,7 @@ import { theme } from "../styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider resetCSS theme={theme}> //3
+    <ChakraProvider resetCSS={true} theme={theme}> //3
       <Component {...pageProps} />
     </ChakraProvider> //4
   );
@@ -69,7 +69,9 @@ import { theme } from "../styles/theme";
 </ChakraProvider>
 
 // Resetamos todo o padrão
-resetCSS 
+// Obs: Por padrão o chakra já vem true e não precisa sar o resetCSS
+// Utilizaremos o resetCSS apenas se fomos colocar como false resetCSS={false}
+resetCSS={true}
 
 //Setamos o tema importado
 theme={theme}
