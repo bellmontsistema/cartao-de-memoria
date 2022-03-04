@@ -19,3 +19,7 @@ Após instalado criamos uma pasta com 2 arquivos no `src`
 Pasta => styles
 
 Arquivos => `config.ts` e `theme.ts`
+
+`Criando um Tema Padrão`
+
+No arquivo theme.ts efetuaremos a seguinte configuração.
