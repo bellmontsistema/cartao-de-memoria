@@ -13,3 +13,9 @@ Primeiro Instalamos as dependências do chakra UI
 ```jsx
 yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion
 ```
+
+Após instalado criamos uma pasta com 2 arquivos no `src`
+
+Pasta => styles
+
+Arquivos => `config.ts` e `theme.ts`
