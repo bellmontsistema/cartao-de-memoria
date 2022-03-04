@@ -45,17 +45,35 @@ No arquivo `_app.tsx`
 
 ```tsx
 import { AppProps } from "next/app"; 
-import { ChakraProvider } from "@chakra-ui/react"; //Importação do Provider
-import { theme } from "../styles/theme"; // Importação do tema criado
+import { ChakraProvider } from "@chakra-ui/react";
+import { theme } from "../styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}> //Envolvemos em volta da aplicação
+    <ChakraProvider resetCSS theme={theme}> //3
       <Component {...pageProps} />
-    </ChakraProvider> // Envolvemos em volta da aplicação
+    </ChakraProvider> //4
   );
 }
 
 export default MyApp;
+
+//importação do Provider
+import { ChakraProvider } from "@chakra-ui/react";
+
+// Importação do tema criado
+import { theme } from "../styles/theme";
+
+// Envolvemos o privider em nossa aplicação
+<ChakraProvider theme={theme}>
+</ChakraProvider>
+
+// Resetamos todo o padrão
+resetCSS 
+
+//Setamos o tema importado
+theme={theme}
+
+
 
 ```
